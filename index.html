@@ -108,8 +108,10 @@
 
   document.getElementById("startButton").onclick = function(){
 
-    createRandomCircleOrSquare();
-    startTime = new Date().getTime();
+    setTimeout(createRandomCircleOrSquare, 200);
+    startTime = new Date().getTime()+200;
+
+    document.getElementById("startButton").style.display = "none";
   }
 
 
